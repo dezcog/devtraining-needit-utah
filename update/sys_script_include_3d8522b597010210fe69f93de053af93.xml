@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.buildFeesRow</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>This function will build a html row for the Fees Table in the SOW</description>
+        <name>buildFeesRow</name>
+        <script><![CDATA[
+function strToCurrency(amount) {
+	var curr = parseFloat(amount);
+	curr = curr.toFixed(2);
+	curr = "$" + curr.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	return curr;
+}
+
+function floatToCurrency(amount) {
+	var curr = amount.toFixed(2);
+	curr = "$" + curr.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	return curr;
+}
+
+function buildFeesRow(skillsetStr,   dayRateStr, discountRateStr, daysStr) {
+	// Adjust the strings into numbers that format nicely
+	var dayRate = strToCurrency(dayRateStr);
+	var discountRate = strToCurrency(discountRateStr);
+	var days = parseInt(daysStr);
+	
+	
+	
+	var html = '<tr style="height: 19.25pt;"><td style="width: 120.0pt; border: solid black 1.0pt; border-top: none; padding: 3.0pt 5.0pt 3.0pt 5.0pt; height: 19.25pt;" valign="top" width="160"><p class="MsoNormal" style="margin: 0cm; line-height: normal; page-break-after: avoid; border: none;"><span lang="EN-US" style="font-family: "Calibri",sans-serif;">__skillset__</span></p></td><td style="width: 74.25pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 5.0pt 5.0pt 5.0pt 5.0pt; height: 19.25pt;" valign="top" width="99"><p class="MsoNormal" style="margin: 0cm; text-align: right; line-height: normal; page-break-after: avoid; border: none;" align="right"><span lang="EN-US" style="font-family: "Calibri",sans-serif;">__dayRate__</span></p></td><td style="width: 80.25pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 3.0pt 5.0pt 3.0pt 5.0pt; height: 19.25pt;" valign="top" width="107"><p class="MsoNormal" style="margin: 0cm; text-align: right; line-height: normal; page-break-after: avoid; border: none;" align="right"><span lang="EN-US" style="font-family: "Calibri",sans-serif;">__discountRate__</span></p></td><td style="width: 75.75pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 3.0pt 5.0pt 3.0pt 5.0pt; height: 19.25pt;" valign="top" width="101"><p class="MsoNormal" style="margin: 0cm; text-align: right; line-height: normal; page-break-after: avoid; border: none;" align="right"><span lang="EN-US" style="font-family: "Calibri",sans-serif;">__days__</span></p></td><td style="width: 109.5pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 3.0pt 5.0pt 3.0pt 5.0pt; height: 19.25pt;" valign="top" width="146"><p class="MsoNormal" style="margin: 0cm; text-align: right; line-height: normal; page-break-after: avoid;" align="right"><span lang="EN-US" style="font-family: "Calibri",sans-serif;">__sowCost__</span></p></td></tr>';
+	
+	// Substitute in the values we've been given
+	html = html.replace('__skillset__', skillsetStr);
+	html = html.replace('__dayRate__', dayRate);
+	html = html.replace('__discountRate__', discountRate);
+	html = html.replace('__days__', days);
+	
+	// Calculate the cost
+	var cost = parseFloat(discountRateStr) * parseFloat(daysStr);
+	var sowCost = floatToCurrency(cost);
+	
+	// Substitute the sowCost into the new row
+	html = html.replace('__sowCost__', sowCost);
+	
+	return html;
+}
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-20 20:42:56</sys_created_on>
+        <sys_id>3d8522b597010210fe69f93de053af93</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>buildFeesRow</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_3d8522b597010210fe69f93de053af93</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-20 23:14:56</sys_updated_on>
+    </sys_script_include>
+</record_update>

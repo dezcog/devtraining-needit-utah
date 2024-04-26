@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_58872_needit_my_custom_table</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_58872_needit_my_custom_table">u_statusCHANGESTOsubmitted^EQ<item display_value="Submitted" endquery="false" field="u_status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="submitted"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>generate pdf</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	// Initialise the PDF
+	var v = new sn_pdfgeneratorutils.PDFGenerationAPI;
+	
+	// Get the variables out of the form
+	var u_datarequest1       = current.u_data_request1;
+	var u_datarequest1_hours = current.u_data_request1_hours;
+	var u_datarequest2       = current.u_data_request2;
+	var u_datarequest2_hours = current.u_data_request2_hours;
+
+	
+	//Get the HTML template referenced in the SOW table
+	var html = current.template.template;
+	
+	// Lookup the rates for the requested skills
+	var gr = new GlideRecord('x_58872_needit_ratecard');
+	gr.addQuery('skillset', u_datarequest1);
+	gr.query();
+	if (gr.getRowCount() == 1)
+		{
+			gr.next();
+		var skillset          = gr.skillset;
+		var dailyRate         = gr.dailyrate;
+		var discountDailyRate = gr.discountdailyrate;
+			
+		// Update the HTML to add in a new row
+		var newRow = buildFeesRow(skillset, dailyRate, discountDailyRate, u_datarequest1_hours) + '<tr><td>newRow1</td></tr>';
+		var updatedHTML = html.replace('<td>newRow</td>', newRow);
+		var cost = parseFloat(dailyRate) * parseInt(u_datarequest1_hours);
+		}
+	
+	gr = new GlideRecord('x_58872_needit_ratecard');
+	gr.addQuery('skillset', u_datarequest2);
+	gr.query();
+	if (gr.getRowCount() == 1)
+		{
+			gr.next();
+			skillset          = gr.skillset;
+			dailyRate         = gr.dailyrate;
+			discountDailyRate = gr.discountdailyrate;
+			
+		// Update the HTML to add in a new row
+		newRow = buildFeesRow(skillset, dailyRate, discountDailyRate, u_datarequest2_hours);
+		updatedHTML = updatedHTML.replace('<td>newRow1</td>', newRow);
+		cost = cost + parseFloat(dailyRate) * parseInt(u_datarequest2_hours);
+		}	
+
+	//Create a version of the SOW cost in the right format
+	//var cost = parseFloat(current.cost);
+	//var sowCost = cost.toFixed(2);
+	var sowCost = floatToCurrency(cost);
+	current.cost = cost;
+
+
+	//Update the HTML to replace the cost with the calculated cost
+	//updatedHTML = html.replace('__totalCost__', current.cost);
+	updatedHTML = updatedHTML.replace('$__totalCost__', sowCost);
+
+	// Update the HTML to add in a new row
+	//var newRow = buildFeesRow('New Skill', '1480', '1100', '5');
+	//updatedHTML = updatedHTML.replace('<td>newRow</td>', newRow);
+	
+	//Set the table name where we're going to attach the PDF
+	var tableName = 'x_58872_needit_my_custom_table';
+
+	//Set the record to which the PDF is to be attached
+	var targetTableSysid = current.getValue('sys_id');
+	
+	//Set the filename for the PDF
+	var fileName = current.u_description_2;
+
+	//Create the PDF
+	var result = v.convertToPDF(updatedHTML, tableName, targetTableSysid, fileName);
+
+    //Store the result of the call back in the table
+	//current.pdfgenerationresult = u_datarequest2;
+	current.pdfgenerationresult = JSON.stringify(result);
+	//current.pdfgenerationresult = JSON.stringify(newRow);
+	//current.pdfgenerationresult = updatedHTML;
+	
+	//Store the total number of days requested
+	//current.total_hours = current.u_datarequest1_hours + current.u_datarequest2_hours;
+	current.total_hours = current.u_data_request1_hours + current.u_data_request2_hours;
+	//current.total_hours = u_datarequest1_hours + u_datarequest2_hours;
+	
+	current.update;
+
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 03:09:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>240375d597850210fe69f93de053af82</sys_id>
+        <sys_mod_count>59</sys_mod_count>
+        <sys_name>generate pdf</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_240375d597850210fe69f93de053af82</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-10 03:26:58</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=240375d597850210fe69f93de053af82"/>
+</record_update>

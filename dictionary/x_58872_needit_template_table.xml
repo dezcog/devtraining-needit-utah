@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="63e6fd9997850210fe69f93de053af42" label="Template Table" max_length="40" name="x_58872_needit_template_table" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Template number" max_length="40" name="number" type="string"/>
+        <element label="Template" max_length="8000" name="template" type="html"/>
+        <element label="Template_name" max_length="40" name="template_name" type="string"/>
+    </element>
+</database>

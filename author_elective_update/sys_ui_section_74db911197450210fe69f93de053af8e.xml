@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Skills Required" section_id="74db911197450210fe69f93de053af8e" sys_domain="global" table="x_58872_needit_my_custom_table" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_integration_engineer</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-20 03:22:34</sys_created_on>
+            <sys_id>aa80876997850210fe69f93de053af70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Skills Required" display_value="Skills Required" name="x_58872_needit_my_custom_table" sys_domain="global" view="Default view">74db911197450210fe69f93de053af8e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-20 03:22:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_data_engineer</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-20 03:22:34</sys_created_on>
+            <sys_id>2e80876997850210fe69f93de053af70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Skills Required" display_value="Skills Required" name="x_58872_needit_my_custom_table" sys_domain="global" view="Default view">74db911197450210fe69f93de053af8e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-20 03:22:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-20 03:22:34</sys_created_on>
+            <sys_id>ae80876997850210fe69f93de053af70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Skills Required" display_value="Skills Required" name="x_58872_needit_my_custom_table" sys_domain="global" view="Default view">74db911197450210fe69f93de053af8e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-20 03:22:34</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_cloud_engineer</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-20 03:22:34</sys_created_on>
+            <sys_id>2280876997850210fe69f93de053af71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Skills Required" display_value="Skills Required" name="x_58872_needit_my_custom_table" sys_domain="global" view="Default view">74db911197450210fe69f93de053af8e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-20 03:22:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Skills Required</caption>
+            <header>false</header>
+            <name>x_58872_needit_my_custom_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-19 01:24:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>74db911197450210fe69f93de053af8e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>x_58872_needit_my_custom_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+            <sys_update_name>sys_ui_section_74db911197450210fe69f93de053af8e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-19 01:44:46</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>0224d0231b2af9549377eb9b2d4bcbf4</instance_id>
+        <instance_name>dev221036</instance_name>
+        <name>sys_ui_section_74db911197450210fe69f93de053af8e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Skills Required" section_id="74db911197450210fe69f93de053af8e" sys_domain="global" table="x_58872_needit_my_custom_table" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_integration_engineer</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-20 03:22:34</sys_created_on><sys_id>aa80876997850210fe69f93de053af70</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Skills Required" display_value="Skills Required" name="x_58872_needit_my_custom_table" sys_domain="global" view="Default view">74db911197450210fe69f93de053af8e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-20 03:22:34</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_data_engineer</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-20 03:22:34</sys_created_on><sys_id>2e80876997850210fe69f93de053af70</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Skills Required" display_value="Skills Required" name="x_58872_needit_my_custom_table" sys_domain="global" view="Default view">74db911197450210fe69f93de053af8e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-20 03:22:34</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-20 03:22:34</sys_created_on><sys_id>ae80876997850210fe69f93de053af70</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Skills Required" display_value="Skills Required" name="x_58872_needit_my_custom_table" sys_domain="global" view="Default view">74db911197450210fe69f93de053af8e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-20 03:22:34</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_cloud_engineer</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-20 03:22:34</sys_created_on><sys_id>2280876997850210fe69f93de053af71</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Skills Required" display_value="Skills Required" name="x_58872_needit_my_custom_table" sys_domain="global" view="Default view">74db911197450210fe69f93de053af8e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-20 03:22:34</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Skills Required</caption><header>false</header><name>x_58872_needit_my_custom_table</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-19 01:24:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>74db911197450210fe69f93de053af8e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_58872_needit_my_custom_table</sys_name><sys_overrides/><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_ui_section_74db911197450210fe69f93de053af8e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-19 01:44:46</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>573512080</payload_hash>
+        <record_name>My Custom Table</record_name>
+        <reverted_from/>
+        <source>a153705197810210fe69f93de053afff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-20 03:22:34</sys_created_on>
+        <sys_id>ae80876997850210fe69f93de053af72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e59e1ce550000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-20 03:22:34</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>66808769f085021054eb6cafb2d80772</update_guid>
+        <update_guid_history>66808769f085021054eb6cafb2d80772:573512080,14404369e7850210860ce0abb8c76585:1512974010,f4cf992df30102109a0a4915d1be3f60:573512080,e048a15dde450210dedbbe1b86ee5cab:279544976,51d06555e2450210c26b586dbfef2681:-1149719371,90902155334502108df7c03df0e98c7b:-1683756955,c4902155a14502106c57fea1afd8e81f:-1258323802,8ddbd111d5450210f5aa0c3392318654:758109158</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-02 00:25:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>25d1a169a81548ac86a44b0dfe8def90</sys_id>
+        <sys_metadata>74db911197450210fe69f93de053af8e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Skills Required</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="My Custom Table">eceaf81197c10210fe69f93de053af2c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ui_section_74db911197450210fe69f93de053af8e</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_74db911197450210fe69f93de053af8e">ae80876997850210fe69f93de053af72</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-02 00:25:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

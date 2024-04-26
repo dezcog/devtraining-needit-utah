@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e0014c8e97450210fe69f93de053af8d" label="My Custom Table Requests" max_length="40" name="x_58872_needit_my_custom_table_requests" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Requested hours" max_length="40" name="requested_hours" type="integer"/>
+        <element label="skillset" max_length="40" name="skillset" type="string"/>
+        <element label="Sow number" max_length="40" name="sow_number" reference="x_58872_needit_my_custom_table" type="string"/>
+    </element>
+</database>

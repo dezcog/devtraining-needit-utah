@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="eceaf81197c10210fe69f93de053af2c" label="My Custom Table" max_length="40" name="x_58872_needit_my_custom_table" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;value = sum(u_cloud_engineer * 10);&#13;&#10;&#9;return value;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="0" formula="sum( multiply(u_cloud_engineer, 10.1, u_days), multiply(u_data_engineer, 12.2, u_days), multiply(u_integration_engineer, 15.5, u_days))" label="Total cost" max_length="38" name="cost" type="currency" virtual_type="formula"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="pdfGenerationResult" max_length="512" name="pdfgenerationresult" type="string"/>
+        <element label="Template" mandatory="true" max_length="32" name="template" reference="x_58872_needit_template_table" type="reference"/>
+        <element display="true" label="Total days" max_length="40" name="total_hours" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element label="Cloud engineer" max_length="40" name="u_cloud_engineer" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Consulting request1" max_length="40" name="u_consulting_request1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Senior Digital Consultant" sequence="0" value="senior digital consultant"/>
+                <element inactive_on_update="false" label="Digital Consultant" sequence="1" value="digital consultant"/>
+                <element inactive_on_update="false" label="UX/UI Designer" sequence="2" value="ux/ui designer"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Consulting request2" max_length="40" name="u_consulting_request2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Senior Digital Consultant" sequence="0" value="senior digital consultant"/>
+                <element inactive_on_update="false" label="Digital Consultant" sequence="1" value="digital consultant"/>
+                <element inactive_on_update="false" label="UX/UI Designer" sequence="2" value="ux/ui designer"/>
+            </choice>
+        </element>
+        <element default="0" label="Requested Days" max_length="40" name="u_consulting_requested_days1" type="integer"/>
+        <element default="0" label="Requested days" max_length="40" name="u_consulting_requested_days2" type="integer"/>
+        <element label="Data engineer" max_length="40" name="u_data_engineer" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Data request1" max_length="40" name="u_data_request1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Data Analyst (offshore)" sequence="0" value="data analyst (offshore)"/>
+                <element inactive="true" inactive_on_update="true" label="Data Analyst (onshore)" sequence="0" value="data analyst"/>
+                <element inactive="true" inactive_on_update="true" label="Data Consultant (onshore)" sequence="0" value="data consultant"/>
+                <element inactive="true" inactive_on_update="true" label="Data Scientist (offshore)" sequence="0" value="data scientist"/>
+                <element inactive="true" inactive_on_update="true" label="Senior Data Engineer (onshore)" sequence="0" value="senior data engineer"/>
+                <element inactive_on_update="false" label="Data Consultant (offshore)" sequence="1" value="data consultant (offshore)"/>
+                <element inactive_on_update="false" label="Senior Data Engineer (onshore)" sequence="2" value="senior data engineer (onshore)"/>
+                <element inactive_on_update="false" label="Data Scientist (offshore)" sequence="3" value="data scientist (offshore)"/>
+                <element inactive_on_update="false" label="Data Consultant (onshore)" sequence="4" value="data consultant (onshore)"/>
+            </choice>
+        </element>
+        <element default="0" label="Requested days" mandatory="true" max_length="40" name="u_data_request1_hours" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Data request2" max_length="40" name="u_data_request2" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Data Analyst (offshore)" sequence="0" value="data analyst"/>
+                <element inactive_on_update="false" label="Data Analyst (onshore)" sequence="0" value="data analyst (onshore)"/>
+                <element inactive="true" inactive_on_update="true" label="Data Consultant (onshore)" sequence="0" value="data consultant"/>
+                <element inactive="true" inactive_on_update="true" label="Data Scientist (onshore)" sequence="0" value="data scientist"/>
+                <element inactive="true" inactive_on_update="true" label="Senior Data Consultant (onshore)" sequence="0" value="senior data consultant"/>
+                <element inactive_on_update="false" label="Senior Data Consultant (onshore)" sequence="1" value="senior data consultant (onshore)"/>
+                <element inactive_on_update="false" label="Data Scientist (onshore)" sequence="2" value="data scientist (onshore)"/>
+                <element inactive_on_update="false" label="Data Consultant (onshore)" sequence="3" value="data consultant (onshore)"/>
+                <element inactive_on_update="false" label="Data Analyst (offshore)" sequence="4" value="data analyst (offshore)"/>
+            </choice>
+        </element>
+        <element default="0" label="Requested days" mandatory="true" max_length="40" name="u_data_request2_hours" type="integer"/>
+        <element default="1" label="Total hours" mandatory="true" max_length="40" name="u_days" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="80" name="u_description_2" type="string"/>
+        <element label="New HTML" max_length="65536" name="u_html_2" type="html"/>
+        <element label="Request summary" max_length="65536" name="u_html_5" type="html"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Infrastructure request1" max_length="40" name="u_infrastructure_request1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Senior Database Consultant" sequence="0" value="senior database consultant"/>
+                <element inactive_on_update="false" label="Senior Linux Consultant" sequence="1" value="senior linux consultant"/>
+                <element inactive_on_update="false" label="Senior Unix Consultant" sequence="2" value="senior unix consultant"/>
+            </choice>
+        </element>
+        <element default="0" label="Requested days" mandatory="true" max_length="40" name="u_infrastructure_requested_hours" type="integer"/>
+        <element label="Integration engineer" max_length="40" name="u_integration_engineer" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="New Journal" max_length="4000" name="u_journal_1" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="New Journal" max_length="4000" name="u_journal_4" type="journal"/>
+        <element attributes="encode_utf8=false" label="New Reference" max_length="32" name="u_reference_2" reference="cmdb_multisource_deny_class" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Skills required" mandatory="true" max_length="40" name="u_skills" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Data engineer" sequence="0" value="data engineer"/>
+                <element inactive_on_update="false" label="Integration engineer" sequence="1" value="integration engineer"/>
+                <element inactive_on_update="false" label="Solution architect" sequence="2" value="solution architect"/>
+            </choice>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Skills Required" mandatory="true" max_length="1024" name="u_skills_required" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="created" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="created"/>
+                <element inactive_on_update="false" label="For review" sequence="1" value="updated"/>
+                <element inactive_on_update="false" label="Submitted" sequence="2" value="submitted"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_3" type="string"/>
+        <index name="index">
+            <element name="template"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_2"/>
+        </index>
+    </element>
+</database>

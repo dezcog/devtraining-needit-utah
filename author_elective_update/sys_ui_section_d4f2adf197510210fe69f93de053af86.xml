@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Section1" section_id="d4f2adf197510210fe69f93de053af86" sys_domain="global" table="x_58872_needit_my_custom_table" version="3" view="">
+        <sys_ui_section action="DELETE">
+            <caption>Section1</caption>
+            <header>false</header>
+            <name>x_58872_needit_my_custom_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-02 01:27:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d4f2adf197510210fe69f93de053af86</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_58872_needit_my_custom_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+            <sys_update_name>sys_ui_section_d4f2adf197510210fe69f93de053af86</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-02 01:27:49</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>0224d0231b2af9549377eb9b2d4bcbf4</instance_id>
+        <instance_name>dev221036</instance_name>
+        <name>sys_ui_section_d4f2adf197510210fe69f93de053af86</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Section1" section_id="d4f2adf197510210fe69f93de053af86" sys_domain="global" table="x_58872_needit_my_custom_table" version="3" view=""><sys_ui_section action="INSERT_OR_UPDATE"><caption>Section1</caption><header>false</header><name>x_58872_needit_my_custom_table</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-04-02 01:27:49</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d4f2adf197510210fe69f93de053af86</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_58872_needit_my_custom_table</sys_name><sys_overrides/><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_ui_section_d4f2adf197510210fe69f93de053af86</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-04-02 01:27:49</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>287347448</payload_hash>
+        <record_name>My Custom Table</record_name>
+        <reverted_from/>
+        <source>a153705197810210fe69f93de053afff</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-02 01:28:19</sys_created_on>
+        <sys_id>27032d7597510210fe69f93de053af98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e9c6bdfe50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-02 01:28:19</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>ab032d75b4510210b7c32bb39235ed97</update_guid>
+        <update_guid_history>ab032d75b4510210b7c32bb39235ed97:287347448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-02 01:30:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>ae3e8a7c83e746f09b98b1cceb418900</sys_id>
+        <sys_metadata>d4f2adf197510210fe69f93de053af86</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Section1</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="My Custom Table">eceaf81197c10210fe69f93de053af2c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ui_section_d4f2adf197510210fe69f93de053af86</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_d4f2adf197510210fe69f93de053af86">27032d7597510210fe69f93de053af98</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-02 01:30:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="572c16e597050210fe69f93de053af75" label="rateCard" max_length="40" name="x_58872_needit_ratecard" type="collection">
+        <element label="dailyRate" max_length="20" name="dailyrate" type="currency"/>
+        <element label="discountDailyRate" max_length="20" name="discountdailyrate" type="currency"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="skillset" max_length="40" name="skillset" type="string"/>
+    </element>
+</database>
